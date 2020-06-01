@@ -4,4 +4,11 @@ class Blog:
         self.author = author
         self.posts = []
 
+    def __repr__(self):
+
+        plural = ""
+        if len(self.posts) != 1:
+            plural = "s"
+
+        return self.title + " by " + self.author + " - " + str(len(self.posts)) + " Post" + plural
 
