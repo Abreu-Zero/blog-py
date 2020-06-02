@@ -17,3 +17,4 @@ class BlogTest(TestCase):
         self.assertEqual(new_blog.__repr__(), "My Test Blog by Amazing Anonym Author - 1 Post")
         new_blog.posts = ["This is a test Post", "This is another test post"]
         self.assertEqual(new_blog.__repr__(), "My Test Blog by Amazing Anonym Author - 2 Posts")
+
